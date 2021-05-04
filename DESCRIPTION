@@ -1,0 +1,19 @@
+Package: MEMTS
+Title: Multivariate Error Measures for Time Series forecasting
+Version: 0.1.0.0
+Authors@R: 
+    person(given = "Jacopo",
+           family = "De Stefani",
+           role = c("aut", "cre"),
+           email = "jacopo.de.stefani@gmail.com",
+           comment = c(ORCID = "0000-0003-0257-4537"))
+Description: The package implements several multivariate error measures for time series forecasting.
+    The error measures (MSE,MASE,MAPE,MASE,SMAPE,WAPE) are defined as a multivariate, 
+    aggregated version of their univariate counterpart.
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
