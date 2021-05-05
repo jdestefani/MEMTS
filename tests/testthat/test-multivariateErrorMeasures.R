@@ -1,7 +1,7 @@
 context("Multivariate Error Measure - Numeric input")
 
 #Set up
-X <- matrix(AirPassengers,ncol = 12)
+X <- t(matrix(AirPassengers,ncol = 12))
 X_hat <- X + 1
 n_row <- dim(X)[1]
 n_col <- dim(X)[2]

@@ -17,12 +17,14 @@ MWAPE(X, X_hat)
 }
 \value{
 List containing:
-- values_vec: Vector of the individual WAPEs
-- mean: Mean of the vector of the individual WAPEs
-- article_ref: WAPE computed according to the reference article
+\itemize{
+\item{\code{values_vec}: }{Vector of the individual WAPEs}
+\item{\code{mean}: }{Mean of the vector of the individual WAPEs}
+\item{\code{article_ref}: }{WAPE computed according to the reference article}
+}
 }
 \description{
-Computes the multivariate WAPE based on the individual time series (according to:https://arxiv.org/pdf/1905.03806.pdf)
+Computes the multivariate WAPE based on the individual time series (according to:https \url{https://arxiv.org/pdf/1905.03806.pdf})
 }
 \examples{
 X <- matrix(rnorm(100),10,10)

@@ -17,8 +17,10 @@ MMASE(X, X_hat)
 }
 \value{
 List containing:
-- values_vec: Vector of the individual MASE
-- mean: Mean of the vector of the individual MASE
+\itemize{
+\item{\code{values_vec}: }{Vector of the individual MASEs}
+\item{\code{mean}: }{Mean of the vector of the individual MASEs}
+}
 }
 \description{
 Computes the multivariate MASE as a mean of the MASEs of the individual time series

@@ -1,4 +1,4 @@
-context("Auxiliary functions")
+context("Input verification")
 
 X <- matrix(AirPassengers,ncol = 12)
 X_hat <- X + 1

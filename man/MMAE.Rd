@@ -17,11 +17,13 @@ MMAE(X, X_hat)
 }
 \value{
 List containing:
-- values_vec: Vector of the individual MAE
-- mean: Mean of the vector of the individual MAE
+\itemize{
+\item{\code{values_vec}: }{Vector of the individual MAEs}
+\item{\code{mean}: }{Mean of the vector of the individual MAEs}
+}
 }
 \description{
-Computes the multivariate MMAE as a mean of the MMAEs of the individual time series
+Computes the multivariate MMAE as a mean of the MAEs of the individual time series
 }
 \examples{
 X <- matrix(rnorm(100),10,10)

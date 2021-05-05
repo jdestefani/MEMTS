@@ -17,8 +17,10 @@ MMAPE(X, X_hat)
 }
 \value{
 List containing:
-- values_vec: Vector of the individual MAPE
-- mean: Mean of the vector of the individual MAPE
+\itemize{
+\item{\code{values_vec}: }{Vector of the individual MAPEs}
+\item{\code{mean}: }{Mean of the vector of the individual MAPEs}
+}
 }
 \description{
 Computes the multivariate MAPE as a mean of the MAPEs of the individual time series

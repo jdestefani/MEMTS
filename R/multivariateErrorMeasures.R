@@ -1,13 +1,16 @@
 #' MMSE - Multivariate Mean Squared Error
 #'
-#' Computes the multivariate MMAE as a mean of the MMAEs of the individual time series
+#' Computes the multivariate MMSE as a mean of the MSEs of the individual time series
 #'
 #' @param X - Target matrix (hxk) for k variables and forecasting horizon h
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual MSE
-#'         - mean: Mean of the vector of the individual MSE
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual MSEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual MSEs}
+#'         }
+#'
 #'
 #' @export
 #' @examples
@@ -24,14 +27,16 @@ MMSE <- function(X,X_hat){
 
 #' MMAE - Multivariate Mean Absolute Error
 #'
-#' Computes the multivariate MMAE as a mean of the MMAEs of the individual time series
+#' Computes the multivariate MMAE as a mean of the MAEs of the individual time series
 #'
 #' @param X - Target matrix (hxk) for k variables and forecasting horizon h
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual MAE
-#'         - mean: Mean of the vector of the individual MAE
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual MAEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual MAEs}
+#'         }
 #'
 #' @export
 #' @examples
@@ -54,8 +59,10 @@ MMAE <- function(X,X_hat){
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual MAPE
-#'         - mean: Mean of the vector of the individual MAPE
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual MAPEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual MAPEs}
+#'         }
 #'
 #' @export
 #' @examples
@@ -78,8 +85,10 @@ MMAPE <- function(X,X_hat){
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual MASE
-#'         - mean: Mean of the vector of the individual MASE
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual MASEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual MASEs}
+#'         }
 #'
 #' @export
 #' @examples
@@ -99,15 +108,17 @@ MMASE <- function(X,X_hat){
 
 #' MWAPE - Multivariate Weighted Absolute Percentage Error
 #'
-#' Computes the multivariate WAPE based on the individual time series (according to:https://arxiv.org/pdf/1905.03806.pdf)
+#' Computes the multivariate WAPE based on the individual time series (according to:https \url{https://arxiv.org/pdf/1905.03806.pdf})
 #'
 #' @param X - Target matrix (hxk) for k variables and forecasting horizon h
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual WAPEs
-#'         - mean: Mean of the vector of the individual WAPEs
-#'         - article_ref: WAPE computed according to the reference article
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual WAPEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual WAPEs}
+#'         \item{\code{article_ref}: }{WAPE computed according to the reference article}
+#'         }
 #'
 #' @export
 #' @examples
@@ -129,15 +140,17 @@ MWAPE <- function(X,X_hat){
 
 #' MMAPE_article - Multivariate Mean Absolute Percentage Error (according to reference article)
 #'
-#' Computes the multivariate MAPE based on the individual time series (according to:https://arxiv.org/pdf/1905.03806.pdf)
+#' Computes the multivariate MAPE based on the individual time series (according to \url{https://arxiv.org/pdf/1905.03806.pdf})
 #'
 #' @param X - Target matrix (hxk) for k variables and forecasting horizon h
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual WAPEs
-#'         - mean: Mean of the vector of the individual WAPEs
-#'         - article_ref: WAPE computed according to the reference article
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual MAPEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual MAPEs}
+#'         \item{\code{article_ref}: }{MAPE computed according to the reference article}
+#'         }
 #'
 #' @export
 #' @examples
@@ -159,15 +172,18 @@ MMAPE_article <- function(X,X_hat){
 
 #' MSMAPE - Multivariate Symmetric Mean Absolute Percentage Error
 #'
-#' Computes the multivariate MSMAPE based on the individual time series (according to:https://arxiv.org/pdf/1905.03806.pdf)
+#' Computes the multivariate SMAPE based on the individual time series (according to \url{https://arxiv.org/pdf/1905.03806.pdf})
 #'
 #' @param X - Target matrix (hxk) for k variables and forecasting horizon h
 #' @param X_hat - Predicted matrix (hxk) for k variables and forecasting horizon h
 #'
 #' @return List containing:
-#'         - values_vec: Vector of the individual WAPEs
-#'         - mean: Mean of the vector of the individual WAPEs
-#'         - article_ref: WAPE computed according to the reference article
+#'         \itemize{
+#'         \item{\code{values_vec}: }{Vector of the individual SMAPEs}
+#'         \item{\code{mean}: }{Mean of the vector of the individual SMAPEs}
+#'         \item{\code{article_ref}: }{SMAPE computed according to the reference article}
+#'         }
+#'
 #'
 #' @export
 #' @examples
