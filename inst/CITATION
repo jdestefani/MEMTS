@@ -1,0 +1,16 @@
+citHeader("To cite MEMTS in publications use:")
+
+citEntry(
+  entry    = "misc",
+  title    = "Multivariate Error Measures for Time Series forecasting",
+  author   = person(given = "Jacopo",
+           family = "De Stefani",
+           comment = c(ORCID = "0000-0003-0257-4537")),
+  journal  = "GitHub",
+  year     = "2021",
+  url      = "https://github.com/jdestefani/MEMTS",
+  textVersion = paste("Jacopo De Stefani (ORCID: 0000-0003-0257-4537) (2021).",
+                      "Multivariate Error Measures for Time Series Forecasting.",
+                      "URL https://github.com/jdestefani/MEMTS"
+  )
+)
